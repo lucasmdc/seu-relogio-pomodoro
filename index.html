@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>Seu relógio pomodoro</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="pomodoro" class="pomodoro">
+            <section class="pomodoro__container"> 
+                <header class="pomodoro__container__header">
+                    <span class="tomato"></span><h1>Seu relógio pomodoro</h1>
+                </header>
+                <div class="pomodoro__container__body">
+                    <div id="pomodoroClock" class="pomodoro__clock">
+                        <div id="pomodoroMinutes" class="pomodoro__display"></div>
+                        <span class="pomodoro__display--separator">:</span>
+                        <div id="pomodoroSeconds" class="pomodoro__display"></div>
+                    </div>
+                    <div id="pomodoroControls" class="pomodoro__clock-controls">
+                        <button id="pomodoroPlayPause" class="pomodoro__clock-controls__button pomodoro__clock-controls__button--play-pause">
+                            <i></i>Play/Pause
+                        </button>
+                        <button id="pomodoroReset" class="pomodoro__clock-controls__button pomodoro__clock-controls__button--reset">
+                            <i></i>Reset
+                        </button>
+                    </div>
+                    <div id="pomodoroSettings" class="pomodoro__clock-settings">
+                        <form id="pomodoroSettingsOptions">
+                            <div class="pomodoro__clock-settings__fields">
+                                <label for="pomodoroSessionTime" class="pomodoro__clock-settings__fields__text-field">Tempo da sessão:</label>
+                                <input id="pomodoroSessionTime" class="pomodoro__clock-settings__fields__field" type="number" min="1" max="60" required/>
+                            </div>
+                            <div class="pomodoro__clock-settings__actions">
+                                <div class="flex-divider"></div>
+                                <button class="pomodoro__clock-settings__button" type="submit">Alterar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="pomodoro__container__footer"></footer>
+            </section>
+        </main>
+        <script src="./pomodoro.js"></script>
+    </body>
+</html>

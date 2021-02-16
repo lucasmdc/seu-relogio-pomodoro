@@ -1,0 +1,17 @@
+{
+  "name": "seu-relogio-pomodoro",
+  "version": "1.0.0",
+  "description": "Controle o seu tempo para ganhar foco em suas atividades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Temporizador"
+  ],
+  "author": "Lucas Limão",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.17.0"
+  }
+}
